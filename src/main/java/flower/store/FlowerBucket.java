@@ -9,15 +9,15 @@ public class FlowerBucket {
     private ArrayList<FlowerPack> flowerBucket = new ArrayList();
 
 
-    public void add(FlowerPack pack){
+    public void add(FlowerPack pack) {
         flowerBucket.add(pack);
 
 
     }
-    public double getPrice(){
+    public double getPrice() {
         double price = 0.0d;
-        for (FlowerPack pack:
-             getFlowerBucket()) {
+        for (FlowerPack pack
+             :getFlowerBucket()) {
             price += pack.getPacketPrice();
 
         }

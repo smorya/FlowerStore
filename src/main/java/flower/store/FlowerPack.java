@@ -6,11 +6,11 @@ public class FlowerPack {
     private int amount;
 
     private double packetPrice;
-    public FlowerPack(Flower newFlower, int newAmount){
+    public FlowerPack(Flower newFlower, int newAmount) {
         flower = newFlower;
         amount = newAmount;
     }
-    public double getPacketPrice(){
+    public double getPacketPrice() {
         packetPrice = flower.getPrice() * amount;
         return packetPrice;
     }

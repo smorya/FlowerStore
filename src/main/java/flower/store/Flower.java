@@ -12,7 +12,7 @@ public class Flower {
     private FlowerColor color;
     @Getter
     private double price;
-    public void setPrice(int number){
+    public void setPrice(int number) {
         price = number;
     }
 
