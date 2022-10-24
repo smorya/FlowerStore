@@ -11,7 +11,7 @@ public class Store {
             case CHAMOMILE:
                 System.out.println("Here you are, chamomile!");
                 break;
-            case TULIP:
+            default:
                 System.out.println("Here you are, tulip!");
                 break;
         }
