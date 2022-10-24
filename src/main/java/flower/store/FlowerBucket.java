@@ -4,7 +4,7 @@ package flower.store;
 import java.util.ArrayList;
 public class FlowerBucket {
     ArrayList<FlowerPack> flowerBucket = new ArrayList();
-    
+    double price = 0;
 
     public void add(FlowerPack pack){
         flowerBucket.add(pack);
@@ -12,7 +12,7 @@ public class FlowerBucket {
 
     }
     public double getPrice(){
-        double price = 0;
+
         for (FlowerPack pack:
              flowerBucket) {
             price += pack.getPacketPrice();
