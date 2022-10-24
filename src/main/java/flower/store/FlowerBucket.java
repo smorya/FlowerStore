@@ -1,10 +1,13 @@
 package flower.store;
 
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 public class FlowerBucket {
-    ArrayList<FlowerPack> flowerBucket = new ArrayList();
-    double price = 0;
+    @Getter
+    private ArrayList<FlowerPack> flowerBucket = new ArrayList();
+
 
     public void add(FlowerPack pack){
         flowerBucket.add(pack);
@@ -12,9 +15,9 @@ public class FlowerBucket {
 
     }
     public double getPrice(){
-
+        double price = 0.0d;
         for (FlowerPack pack:
-             flowerBucket) {
+             getFlowerBucket()) {
             price += pack.getPacketPrice();
 
         }
