@@ -10,10 +10,11 @@ public class Flower {
     @Getter
     private double sepalLength;
     private FlowerColor color;
+    private final int MAXIMUM_NUMBER = 100;
     @Getter
     private double price;
     public void setPrice(int number){
-        price = Math.min(number, 100);
+        price = Math.min(number, MAXIMUM_NUMBER);
     }
 
 
